@@ -1,5 +1,184 @@
+/* Nothing here is copy pasted. 
+Though I used tools like css gradint tool and some extentions like prittir... 
+also my ai agent suggetin is of.
+I will initalize it once I done with every thing else*/
+
+/* initalizing */
 *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+:root {
+    --clr-primary-lr: #60A5FA;
+    --clr-primary-l : #2563EB;
+    --clr-primary : #1D4ED8;
+    --clr-primary-d : #0D1B2A;
+    --clr-gray-l : #888888;
+    --clr-gray : #575757;
+    --clr-gray-d : #333333;
+    --clr-white : #fff;
+    --clr-background : #D9D9D9;
+    --clr-background-s : #F8F9FB;
+    --clr-border : #E5E7EB;
+    --clr-black : #000102;
+}
+
+
+/* comman utilities */
+body {
+    background-color: gray;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+.cm-primary-btn {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+    font-weight: bold;
+    line-height: 24px;
+}
+.cm-section {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+/* speakers card  */
+.cm-card-speakers {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--clr-border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cm-card-speakers img{
+    height: 324px;
+    width: 100%;
+    border: 1 solid var(--clr-border);
+}
+.cm-card-speakers div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px !important;
+    flex-grow: 1;
+    border: 1 solid var(--clr-border);
+}
+.cm-card-speakers div p{
+    font-size: 12px;
+    color: var(--clr-primary-l);
+}
+.cm-card-speakers div h3{
+    font-size: 20px;
+    color: var(--clr-primary-d);
+}
+.cm-card-speakers div h4{
+    font-size: 14px;
+    color: var(--clr-gray);
+}
+/* speakers card end*/
+
+/* header section */
+header {
+    height: 98px;
+    display: flex;
+    padding: 0 60px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06); 
+    /* I also worked with figma so I can see exact values.
+    It is hard to code without tokens & variables */
+}
+.logo-place-holder img {
+    width: 134px;
+    height: 44px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+nav a {
+    text-decoration: none;
+    color: var(--clr-gray);
+    font-family: "Arimo";
+    font-weight: 500;
+}
+header button{
+    width: 188px;
+    height: 48px;
+    font-size: 16px;
+}
+
+
+/* Banner Section */
+#Banner{
+    height: calc(100vh - 98px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20%;
+    padding: 80px;
+    text-align: center;
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 70%), linear-gradient(45deg,rgba(0, 0, 0, 1) 13%, rgba(0, 0, 0, 0) 58%), url(./assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Banner div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 960px;
+}
+#Banner h1{
+    font-size: 80px;
+    line-height: 76px;
+    font-weight: bold;
+}
+#Banner p{
+    font-size: 22px;
+    font-weight: normal; 
+    line-height: 24px;
+    max-width: 830px;
+}
+#Banner button {
+    height: 74px;
+    width: 282px;
+    font-size: 24px;
+}
+
+/* Meet the Speakers */
+#Meet-Speakers {
+    background-color: var(--clr-white);
+    padding: 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 58px;
+}
+#Meet-Speakers h2 {
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--clr-black);
+}
+.container-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
 }
