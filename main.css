@@ -51,17 +51,15 @@ body {
 
 /* speakers card  */
 .cm-card-speakers {
-    height: 460px;
-    width: 644px;
     display: flex;
     flex-direction: column;
-    border: 1 solid var(--clr-border);
+    border: 1px solid var(--clr-border);
     border-radius: 10px;
     overflow: hidden;
 }
 .cm-card-speakers img{
     height: 324px;
-    width: 644px;
+    width: 100%;
     border: 1 solid var(--clr-border);
 }
 .cm-card-speakers div{
@@ -84,7 +82,7 @@ body {
     font-size: 14px;
     color: var(--clr-gray);
 }
-
+/* speakers card end*/
 
 /* header section */
 header {
@@ -130,7 +128,7 @@ header button{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 35%;
+    gap: 20%;
     padding: 80px;
     text-align: center;
     background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0) 70%), linear-gradient(45deg,rgba(0, 0, 0, 1) 13%, rgba(0, 0, 0, 0) 58%), url(./assets/banner.jpg);
@@ -146,10 +144,8 @@ header button{
 }
 #Banner h1{
     font-size: 80px;
+    line-height: 76px;
     font-weight: bold;
-}
-#Banner h1 span{
-    font-style: italic;
 }
 #Banner p{
     font-size: 22px;
@@ -164,3 +160,25 @@ header button{
 }
 
 /* Meet the Speakers */
+#Meet-Speakers {
+    background-color: var(--clr-white);
+    padding: 114px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 58px;
+}
+#Meet-Speakers h2 {
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--clr-black);
+}
+.container-speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
