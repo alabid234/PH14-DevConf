@@ -32,6 +32,9 @@ body {
     flex-direction: column;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
+button:hover{
+    cursor: pointer;
+}
 .cm-primary-btn {
     padding: 12px;
     border-radius: 10px;
@@ -301,3 +304,53 @@ header button{
     background-color: var(--clr-white);
 }
 /* priceing card  */
+
+/* footer design */
+footer {
+    background-color: #0D1B2A !important;
+    padding: 32px 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px
+}
+.foot-top {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.foot-right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+    font-size: 32px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 16px;
+    margin-left: 64px;
+}
+.copywrite{
+    width: 100%;
+    color: var(--clr-white);
+    display: flex;
+    justify-content: space-between;
+}
+.copywrite div{
+    display: flex;
+    gap: 16px;
+
+}
+.copywrite a{
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+footer hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: var(--clr-gray-l);
+} 
