@@ -379,7 +379,7 @@ header button{
 footer {
     background-color: var(--clr-primary-d) !important;
     padding: 32px 114px;
-    gap: 24px
+    gap: 16px
 }
 .foot-top {
     width: 100%;
@@ -402,7 +402,7 @@ footer hr {
     width: 100%;
     border: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: var(--clr-gray-l);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
 } 
 .copyright{
     width: 100%;
