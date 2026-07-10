@@ -214,7 +214,6 @@ header button{
 .priceing-container{
     display: flex;
     flex-direction: row !important;
-    padding: 0 114px;
 }
 .pro {
     background-color: var(--clr-primary-d) ;
@@ -242,6 +241,7 @@ header button{
 
 /* priceing card  */
 .cm-pricing-card{
+    width: 340px;
     display: flex;
     flex-direction: column;
     gap: 20px !important;
@@ -278,8 +278,10 @@ header button{
     background-color: var(--clr-gray-l);
 } 
 .cm-pricing-card ul {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: left;
     gap: 10px;
     padding-left: 18px;
     color: var(--clr-gray-d);
