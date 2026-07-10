@@ -18,12 +18,12 @@
 
 <body>
     <header class="cm-section">
-        <div class="logo-place-holder">
-            <img src="./assets/logo.png" alt="DEBCONF" width="134" height="44">
+        <div class="logo-placeholder">
+            <img src="./assets/logo.png" alt="DEVCONF" width="134" height="44">
         </div>
         <nav>
             <ul>
-                <li><a href="">Speakers</a></li>
+                <li><a href="#Meet-Speakers">Speakers</a></li>
                 <li><a href="">Schedule</a></li>
                 <li><a href="">Tracks</a></li>
                 <li><a href="">Venue</a></li>
@@ -33,7 +33,7 @@
         <button class="cm-primary-btn">Register Now</button>
     </header>
     <main>
-        <section id="Banner" class="cm-section">
+        <section id="Banner" class="banner cm-section flex-c">
             <div>
                 <h1>Code.<br> <em>Connect.</em> <br> Create</h1>
                 <p>Join 4,000+ engineers, founders, and builders at the premier developer conference of 2026. Three days
@@ -41,35 +41,35 @@
             </div>
             <button class="cm-primary-btn">Register Now</button>
         </section>
-        <section id="Meet-Speakers" class="cm-section">
+        <section id="Meet-Speakers" class="meet-speaker cm-section flex-c">
             <h2>Meet the Speakers</h2>
             <div class="container-speakers">
-                <div class="cm-card-speakers">
-                    <img src="./assets/andrej.png" alt="Picture of Andrej" width="642px" height="324px">
+                <div class="cm-card-speakers shadow">
+                    <img src="./assets/andrej.png" alt="Andrej Karpathy speaking" width="642" height="324">
                     <div>
                         <p>AI / ML</p>
                         <h3>Andrej Karpathy</h3>
                         <h4>Pretraining team, Anthropic</h4>
                     </div>
                 </div>
-                <div class="cm-card-speakers">
-                    <img src="./assets/demis.png" alt="Picture of Demis" width="642px" height="324px">
+                <div class="cm-card-speakers shadow">
+                    <img src="./assets/demis.png" alt="Demis Hassabis speaking" width="642" height="324">
                     <div>
                         <p>Cloud & DevOps</p>
                         <h3>Demis Hassabis</h3>
                         <h4>Co-Founder and CEO, Google DeepMind</h4>
                     </div>
                 </div>
-                <div class="cm-card-speakers">
-                    <img src="./assets/gary.png" alt="Picture of Gary" width="642px" height="324px">
+                <div class="cm-card-speakers shadow">
+                    <img src="./assets/gary.png" alt="Gary Marcus speaking" width="642" height="324">
                     <div>
                         <p>Frontend</p>
                         <h3>Gary Marcus</h3>
                         <h4>Staff Engineer, Vercel</h4>
                     </div>
                 </div>
-                <div class="cm-card-speakers">
-                    <img src="./assets/demis.png" alt="Picture of Demis" width="642px" height="324px">
+                <div class="cm-card-speakers shadow">
+                    <img src="./assets/mustafa.png" alt="Mustafa Suleyman speaking" width="642" height="324">
                     <div>
                         <p>Security</p>
                         <h3>Mustafa Suleyman</h3>
@@ -78,13 +78,13 @@
                 </div>
             </div>
         </section>
-        <section id="Pricing" class="cm-section">
+        <section id="Pricing" class="pricing cm-section flex-c">
             <div>
                 <h2 class="cm-h2">Secure Your Spot</h2>
                 <p>Early-bird pricing ends August 15, 2026.</p>
             </div>
-            <div class="priceing-container">
-                <div class="cm-pricing-card">
+            <div class="pricing-container">
+                <div class="cm-pricing-card shadow">
                     <div>
                         <h4>Standard</h4>
                         <span>$399</span>
@@ -101,7 +101,7 @@
                     </ul>
                     <button>Get Standard</button>
                 </div>
-                <div class="cm-pricing-card pro">
+                <div class="cm-pricing-card pro shadow">
                     <div>
                         <h4>Pro</h4>
                         <span>$749</span>
@@ -118,7 +118,7 @@
                     </ul>
                     <button>Get Pro</button>
                 </div>
-                <div class="cm-pricing-card">
+                <div class="cm-pricing-card shadow">
                     <div>
                         <h4>Team</h4>
                         <span>$5,999</span>
@@ -137,9 +137,11 @@
                 </div>
             </div>
         </section>
-        <section id="Sponsors"></section>
+        <section id="Sponsors">
+
+        </section>
     </main>
-    <footer class="cm-section">
+    <footer class="cm-section flex-c">
         <div class="foot-top">
             <div class="foot-left">
                 <img src="./assets/footer-logo.png" alt="Footer Logo" width="134" height="44">
@@ -152,7 +154,7 @@
             </div>
         </div>
         <hr>
-        <div class="copywrite">
+        <div class="copyright">
             <div>© 2026 DevConf. All rights reserved.</div>
             <div><a href="">Privacy Policy</a><a href="">Terms of Service</a></div>
         </div>
